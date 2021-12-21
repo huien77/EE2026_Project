@@ -1,0 +1,153 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Apr  2 19:52:31 2021
+| Host         : Galaxia running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    82 |
+| Unused register locations in slices containing registers |   210 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           18 |
+|      4 |            1 |
+|      6 |            3 |
+|      8 |            3 |
+|     10 |            5 |
+|     12 |            2 |
+|     14 |            4 |
+|    16+ |           46 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             348 |           99 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1684 |          230 |
+| Yes          | No                    | No                     |              46 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             808 |          195 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+-------------------------------------------+----------------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |               Enable Signal               |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count |
++------------------------------------------------+-------------------------------------------+----------------------------------------------------+------------------+----------------+
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[3]          | nolabel_line72/SR[1]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              |                                           | nolabel_line72/led_config_reg[0]                   |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[2]          | nolabel_line72/SR[0]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[14]         | nolabel_line72/SR[12]                              |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[1]_2        | nolabel_line61/SR[0]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[12]_0       | nolabel_line72/SR[10]                              |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[13]         | nolabel_line72/SR[11]                              |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[10]         | nolabel_line72/SR[8]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line61/led_config_reg[8]          | nolabel_line72/SR[6]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[15]         | nolabel_line72/SR[13]                              |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[11]         | nolabel_line72/SR[9]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[4]          | nolabel_line72/SR[2]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[9]          | nolabel_line72/SR[7]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[6]          | nolabel_line72/SR[4]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[7]          | nolabel_line72/SR[5]                               |                1 |              2 |
+|  nolabel_line73/unit_clk_10hz/CLK              | nolabel_line72/led_config_reg[5]          | nolabel_line72/SR[3]                               |                1 |              2 |
+|  nolabel_line92/unit_clk1hz/clk                |                                           |                                                    |                1 |              2 |
+| ~clk_6p25mhz_BUFG                              |                                           |                                                    |                1 |              2 |
+|  nolabel_line74/unit_clk_381hz/clk_381hz       |                                           |                                                    |                1 |              4 |
+|  nolabel_line92/unit_clk50hz/curr_reg[0]       |                                           |                                                    |                2 |              6 |
+|  nolabel_line92/unit_clk1hz/clk                |                                           | nolabel_line92/count2[2]_i_1_n_0                   |                1 |              6 |
+|  nolabel_line98/unit_clk4hz/start_count_reg[1] |                                           |                                                    |                1 |              6 |
+|  nolabel_line87/unit_clk48hz/start_game_reg    |                                           | nolabel_line87/items_held[3]_i_1_n_0               |                2 |              8 |
+|  nolabel_line74/unit_clk_10hz/CLK              | nolabel_line72/Q[11]                      |                                                    |                2 |              8 |
+|  nolabel_line74/unit_clk_381hz/clk_381hz       |                                           | nolabel_line74/an[3]_i_1__1_n_0                    |                1 |              8 |
+|  nolabel_line57/unit_clk48hz/clk_20khz         |                                           |                                                    |                2 |             10 |
+|  nolabel_line92/rand_count_reg[0]              |                                           |                                                    |                4 |             10 |
+|  nolabel_line92/unit_clk1hz/clk                | nolabel_line92/count[4]_i_2_n_0           | nolabel_line57/SR[0]                               |                2 |             10 |
+|  nolabel_line98/unit_clk6p25mhz/clk_6p25mhz    |                                           |                                                    |                4 |             10 |
+|  nolabel_line92/unit_clk50hz/curr_reg[0]       | d5/d2/E[0]                                | nolabel_line92/count1[4]_i_1_n_0                   |                1 |             10 |
+|  nolabel_line87/unit_clk16hz/CLK               | nolabel_line87/y_spriteTopLeft[5]_i_1_n_0 | nolabel_line87/clear                               |                2 |             12 |
+|  nolabel_line87/unit_clk48hz/start_game_reg    |                                           | nolabel_line87/clear                               |                5 |             12 |
+|  nolabel_line81/unit_clk_20khz/CLK             | nolabel_line81/sel                        | nolabel_line81/shift[6]_i_1_n_0                    |                3 |             14 |
+|  nolabel_line87/unit_clk16hz/CLK               | nolabel_line87/x_spriteTopLeft[6]_i_1_n_0 | nolabel_line87/clear                               |                3 |             14 |
+|  nolabel_line87/unit_clk48hz/start_game_reg    |                                           |                                                    |                5 |             14 |
+|  nolabel_line74/unit_clk_381hz/clk_381hz       | nolabel_line74/seg[6]_i_1__0_n_0          |                                                    |                3 |             14 |
+|  nolabel_line87/unit_clk381hz/seg_reg[5]       | nolabel_line87/seg_counter[1]_i_2_n_0     | nolabel_line87/seg_counter0                        |                2 |             16 |
+|  nolabel_line81/unit_clk_6p25mhz/CLK           |                                           | nolabel_line80/SS[0]                               |                3 |             16 |
+|  nolabel_line87/unit_clk1hz/count_down_reg[0]  | nolabel_line87/sel                        | nolabel_line87/clear                               |                4 |             16 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line92/print_flag2_out                     |                3 |             16 |
+|  clk_6p25mhz_1                                 |                                           |                                                    |                6 |             18 |
+|  unit_clk48hz/clk_20khz                        |                                           |                                                    |                6 |             20 |
+|  clk_6p25mhz_1                                 | nolabel_line87/oled_data[13]_i_2_n_0      | nolabel_line87/oled_data[13]_i_1_n_0               |                3 |             20 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line80/oled_simon1                         |                4 |             22 |
+|  nolabel_line98/unit_clk381hz/CLK              |                                           |                                                    |                4 |             24 |
+|  unit_clk20khz/J_MIC3_Pin1_OBUF                |                                           |                                                    |                2 |             24 |
+|  clk_20khz_0                                   | nolabel_line72/COUNT[31]_i_1_n_0          |                                                    |                2 |             24 |
+|  CLOCK_IBUF_BUFG                               |                                           | unit_clk20khz/J_MIC3_Pin1_OBUF                     |                3 |             24 |
+| ~nolabel_line61/J_MIC3_Pin4_OBUF               |                                           |                                                    |                3 |             24 |
+|  clk_20khz_0                                   |                                           |                                                    |                5 |             26 |
+| ~clk_6p25mhz_BUFG                              |                                           | d1/d1/reset                                        |                5 |             34 |
+|  nolabel_line98/unit_clk6p25mhz/clk_6p25mhz    |                                           | nolabel_line98/colourOn                            |                5 |             40 |
+|  nolabel_line92/unit_clk50hz/curr_reg[0]       | d5/d2/p_0_in5_in                          |                                                    |                3 |             40 |
+| ~clk_6p25mhz_BUFG                              | nolabel_line64/delay_reg[0]_0             | d1/d1/reset                                        |                5 |             40 |
+|  clk_6p25mhz_1                                 | nolabel_line87/clear                      | nolabel_line87/task_count[22]_i_1_n_0              |                7 |             46 |
+|  clk_20khz_0                                   |                                           | nolabel_line72/COUNT[31]_i_1_n_0                   |                8 |             62 |
+| ~clk_6p25mhz_BUFG                              | nolabel_line64/state                      | d1/d1/reset                                        |                9 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line73/unit_clk_10hz/clear                 |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line57/unit_clk48hz/clear                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line87/unit_clk16hz/count[0]_i_1_n_0       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line87/unit_clk1hz/count[0]_i_1__3_n_0     |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line87/unit_clk381hz/count[0]_i_1__1_n_0   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line87/unit_clk6p25mhz/count[0]_i_1__2_n_0 |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line92/unit_clk1hz/count[0]_i_1__17_n_0    |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line92/unit_clk50hz/count[0]_i_1__16_n_0   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | unit_clk20khz/clear                                |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | unit_clk48hz/count[0]_i_1__18_n_0                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | unit_clk6p25mhz/count[0]_i_1__20_n_0               |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line72/unit_clk_20khz/clear                |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line87/unit_clk48hz/count[0]_i_1__0_n_0    |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line81/unit_clk_6p25mhz/clear              |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line74/unit_clk_10hz/count[0]_i_1__12_n_0  |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line74/unit_clk_381hz/clear                |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line98/unit_clk381hz/count[0]_i_1__7_n_0   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line98/unit_clk48hz/count[0]_i_1__5_n_0    |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line98/unit_clk4hz/clear                   |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line98/unit_clk6p25mhz/count[0]_i_1__6_n_0 |                8 |             64 |
+|  CLOCK_IBUF_BUFG                               |                                           | nolabel_line81/unit_clk_20khz/count[0]_i_1__14_n_0 |                8 |             64 |
+|  clk_48hz                                      |                                           |                                                    |               22 |             68 |
+|  CLOCK_IBUF_BUFG                               |                                           |                                                    |               31 |             82 |
+| ~clk_6p25mhz_BUFG                              |                                           | d1/d2/spi_word_bit_count_reg[0]_0                  |               21 |             90 |
+|  clk_48hz                                      | nolabel_line57/board00                    | SW1_IBUF                                           |              139 |            516 |
++------------------------------------------------+-------------------------------------------+----------------------------------------------------+------------------+----------------+
+
+
